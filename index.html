@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="刘书成 (Liu Shucheng) 的个人主页 — 教育背景、研究方向与技能。" />
+  <title>刘书成 · 个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='sans-serif' font-weight='700' fill='%234f46e5'>L</text></svg>" />
+</head>
+<body>
+  <!-- ===== 顶部导航 ===== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__avatar">LS</span>
+        <span class="nav__name">刘书成</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">简介</a>
+        <a href="#education">教育背景</a>
+        <a href="#research">研究方向</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 首屏 Hero ===== -->
+    <section class="hero reveal">
+      <div class="hero__inner">
+        <div class="hero__avatar">LS</div>
+        <h1 class="hero__title">刘书成</h1>
+        <p class="hero__tagline">计算机科学研究者 · 用代码与数据探索智能的边界</p>
+        <p class="hero__sub">欢迎来到我的个人主页。这里记录我的学习历程、研究兴趣与项目实践。</p>
+        <div class="hero__actions">
+          <a href="#research" class="btn btn--primary">查看研究方向</a>
+          <a href="#contact" class="btn btn--ghost">联系我</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 简介 ===== -->
+    <section class="section reveal" id="about">
+      <h2 class="section__title">简介</h2>
+      <div class="card">
+        <p>
+          你好，我是<strong>刘书成</strong>（GitHub：<a href="https://github.com/liushucheng111" target="_blank" rel="noopener">@liushucheng111</a>）。
+          我对计算机系统、人工智能与数据科学抱有持续的好奇心，喜欢把抽象的问题拆解成可实现的工程方案。
+        </p>
+        <p>
+          在学习和研究中，我注重把理论落地为可靠的系统，也乐于通过开源项目与他人协作、分享。
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 教育背景 ===== -->
+    <section class="section reveal" id="education">
+      <h2 class="section__title">教育背景</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content card">
+            <span class="timeline__date">2022 — 2026（示例）</span>
+            <h3>某某大学 · 计算机科学与技术 · 学士</h3>
+            <p>主修课程：数据结构、算法设计、操作系统、机器学习、数据库系统。GPA 3.8/4.0。</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content card">
+            <span class="timeline__date">2026 — 至今（示例）</span>
+            <h3>某某大学 · 人工智能 · 硕士（在读）</h3>
+            <p>研究方向聚焦机器学习系统与高效算法，参与多个科研与工程实践项目。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 研究方向 ===== -->
+    <section class="section reveal" id="research">
+      <h2 class="section__title">研究方向</h2>
+      <div class="grid grid--research">
+        <article class="card research">
+          <div class="research__icon">🤖</div>
+          <h3>机器学习与深度学习</h3>
+          <p>关注模型结构设计、训练效率与泛化能力，探索在小样本场景下的可靠学习。</p>
+        </article>
+        <article class="card research">
+          <div class="research__icon">⚙️</div>
+          <h3>系统与高性能计算</h3>
+          <p>研究分布式系统、推理加速与资源调度，让算法在真实硬件上跑得更快更稳。</p>
+        </article>
+        <article class="card research">
+          <div class="research__icon">📊</div>
+          <h3>数据科学与工程</h3>
+          <p>从数据采集、清洗到可视化与建模，构建端到端的数据驱动解决方案。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 技能 ===== -->
+    <section class="section reveal" id="skills">
+      <h2 class="section__title">技能</h2>
+      <div class="card">
+        <div class="skill-group">
+          <h3 class="skill-group__title">编程语言</h3>
+          <ul class="tags">
+            <li>Python</li><li>C / C++</li><li>Java</li><li>JavaScript / TypeScript</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">框架与工具</h3>
+          <ul class="tags">
+            <li>PyTorch</li><li>TensorFlow</li><li>Git</li><li>Docker</li><li>Linux</li><li>React</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">专业领域</h3>
+          <ul class="tags">
+            <li>机器学习</li><li>数据分析</li><li>算法设计</li><li>系统设计</li><li>科研写作</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 联系方式 ===== -->
+    <section class="section reveal" id="contact">
+      <h2 class="section__title">联系方式</h2>
+      <div class="card contact">
+        <p>如果你对我的研究或项目感兴趣，欢迎随时联系：</p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon">✉️</span>
+            <a href="mailto:you@example.com">you@example.com</a>
+            <em>（请替换为你的邮箱）</em>
+          </li>
+          <li>
+            <span class="contact__icon">🐙</span>
+            <a href="https://github.com/liushucheng111" target="_blank" rel="noopener">github.com/liushucheng111</a>
+          </li>
+          <li>
+            <span class="contact__icon">🔗</span>
+            <a href="#" target="_blank" rel="noopener">个人博客 / 其他主页</a>
+            <em>（可选）</em>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 刘书成 · 基于 GitHub Pages 构建</p>
+    <a href="#top" class="footer__top">回到顶部 ↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
